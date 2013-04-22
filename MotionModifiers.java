@@ -42,6 +42,7 @@ public class MotionModifiers {
 	public final static Block inlineLauncher = new InlineLauncher(504);
 	public final static Block localizedDeflector = new LocalizedDeflector(505);
 	public final static Block speedBlock = new SpeedBlock(506);
+	public final static Block unstableField = new UnstableFieldBlock(507);
 
 	@SidedProxy(clientSide="hexaguin.motionmodifiers.client.ClientProxy", serverSide="hexaguin.motionmodifiers.CommonProxy")
 	public static CommonProxy proxy;
@@ -62,8 +63,9 @@ public class MotionModifiers {
             LanguageRegistry.addName(launcherBlock, "Rapid Vertical Momentum Booster");
             LanguageRegistry.addName(launcherBlockB, "Rapid Vertical Momentum Booster");
             LanguageRegistry.addName(inlineLauncher, "Inline Vertical Momentum Booster");
-            LanguageRegistry.addName(localizedDeflector, "Stabilized Local Deflection Field WIP AND BUGGY!");
+            //LanguageRegistry.addName(localizedDeflector, "Stabilized Local Deflection Field WIP AND BUGGY!"); //Removed until I can figure out how this breaks.
             LanguageRegistry.addName(speedBlock, "Rapid Velocity Enchancer");
+            LanguageRegistry.addName(unstableField, "Unstable Kinetic Field");
             
             GameRegistry.registerBlock(deflectorBlock);
             MinecraftForge.setBlockHarvestLevel(deflectorBlock, "Pickaxe", 2);
