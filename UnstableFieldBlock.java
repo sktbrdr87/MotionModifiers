@@ -17,16 +17,9 @@ public class UnstableFieldBlock extends Block {
 	
 	public void onEntityCollidedWithBlock(World par1World, int par2, int par3, int par4, Entity par5Entity)
     {
-		 this.func_94391_a(par1World, par2, par3, par4, (EntityLiving)null);
+		
     }
 	
-	public void func_94391_a(World par1World, int par2, int par3, int par4, EntityLiving par6EntityLiving)
-    {
-        if (!par1World.isRemote)
-        {
-                ThrownKinetiteBomb kinetiteBomb = new ThrownKinetiteBomb(par1World, (double)((float)par2 + 0.5F), (double)((float)par3 + 0.5F), (double)((float)par4 + 0.5F));
-                par1World.spawnEntityInWorld(kinetiteBomb);
-        }
-    }
+	
 
 }

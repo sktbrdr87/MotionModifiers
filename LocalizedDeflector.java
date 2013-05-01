@@ -21,23 +21,23 @@ public class LocalizedDeflector extends Block {
     public void onEntityCollidedWithBlock(World par1World, int par2, int par3, int par4, Entity par5Entity)
     {
     	par5Entity.motionX = 0-par5Entity.motionX*2;
-    	//if (par5Entity.motionX>0){
-    	//	par5Entity.motionX =+ 2;
-    	//} else {
-    	//	par5Entity.motionX =- 2;
-    	//}
-    	par5Entity.motionY = 0-par5Entity.motionY*2;
-    	//if (par5Entity.motionY>0){
-    	//	par5Entity.motionY =+ 2;
-    	//} else {
-    	//	par5Entity.motionY =- 2;
-    	//}
-    	par5Entity.motionZ = 0-par5Entity.motionZ*2;
-    	//if (par5Entity.motionZ>0){
-    	//	par5Entity.motionZ =+ 2;
-    	//} else {
-    	//	par5Entity.motionZ =- 2;
-    	//}
+    	if (par5Entity.motionX>0){
+    		par5Entity.motionX =+ 1;
+    	} else {
+    		par5Entity.motionX =- 1;
+    	}
+    	//par5Entity.motionY = 0-par5Entity.motionY*2;
+    	if (par5Entity.motionY>0){
+    		par5Entity.motionY =+ 1;
+    	} else {
+    		par5Entity.motionY =- 1;
+    	}
+    	//par5Entity.motionZ = 0-par5Entity.motionZ*2;
+    	if (par5Entity.motionZ>0){
+    		par5Entity.motionZ =+ 1;
+    	} else {
+    		par5Entity.motionZ =- 1;
+    	}
     	par5Entity.setPosition(par5Entity.lastTickPosX, par5Entity.lastTickPosY, par5Entity.lastTickPosZ);
     }
 

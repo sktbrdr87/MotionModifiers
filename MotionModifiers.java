@@ -63,23 +63,23 @@ public class MotionModifiers {
             LanguageRegistry.addName(launcherBlock, "Rapid Vertical Momentum Booster");
             LanguageRegistry.addName(launcherBlockB, "Rapid Vertical Momentum Booster");
             LanguageRegistry.addName(inlineLauncher, "Inline Vertical Momentum Booster");
-            //LanguageRegistry.addName(localizedDeflector, "Stabilized Local Deflection Field WIP AND BUGGY!"); //Removed until I can figure out how this breaks.
+            LanguageRegistry.addName(localizedDeflector, "Stabilized Local Deflection Field WIP AND BUGGY!"); //Removed until I can figure out how this breaks.
             LanguageRegistry.addName(speedBlock, "Rapid Velocity Enchancer");
             LanguageRegistry.addName(unstableField, "Unstable Kinetic Field");
             
             GameRegistry.registerBlock(deflectorBlock);
-            MinecraftForge.setBlockHarvestLevel(deflectorBlock, "Pickaxe", 2);
             GameRegistry.registerBlock(absorberBlock);
-            MinecraftForge.setBlockHarvestLevel(absorberBlock, "Pickaxe", 2);
             GameRegistry.registerBlock(launcherBlock);
-            MinecraftForge.setBlockHarvestLevel(launcherBlock, "Pickaxe", 2);
             GameRegistry.registerBlock(launcherBlockB);
-            MinecraftForge.setBlockHarvestLevel(launcherBlockB, "Pickaxe", 2);
             GameRegistry.registerBlock(inlineLauncher);
-            MinecraftForge.setBlockHarvestLevel(inlineLauncher, "Pickaxe", 2);
             GameRegistry.registerBlock(localizedDeflector);
-            MinecraftForge.setBlockHarvestLevel(speedBlock, "Pickaxe", 2);
             GameRegistry.registerBlock(speedBlock);
+            MinecraftForge.setBlockHarvestLevel(deflectorBlock, "Pickaxe", 2);
+            MinecraftForge.setBlockHarvestLevel(absorberBlock, "Pickaxe", 2);
+            MinecraftForge.setBlockHarvestLevel(launcherBlock, "Pickaxe", 2);
+            MinecraftForge.setBlockHarvestLevel(launcherBlockB, "Pickaxe", 2);
+            MinecraftForge.setBlockHarvestLevel(inlineLauncher, "Pickaxe", 2);
+            MinecraftForge.setBlockHarvestLevel(speedBlock, "Pickaxe", 2);
             
             ItemStack pearlStack = new ItemStack(Item.enderPearl);
             ItemStack diamondStack = new ItemStack(Item.diamond);

@@ -1,7 +1,7 @@
 MotionModifiers
 ===============
 
-An open source Minecraft mod by somebody who has no idea how java works. It adds speed blocks, jump pads, force fields, explosives, and other such things.
+An open source Minecraft mod by somebody who has very little java experiance. It adds speed blocks, jump pads, force fields, explosives, and other such things.
 
 *Planned features*
 
