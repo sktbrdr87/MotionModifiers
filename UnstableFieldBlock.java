@@ -17,7 +17,9 @@ public class UnstableFieldBlock extends Block {
 	
 	public void onEntityCollidedWithBlock(World par1World, int par2, int par3, int par4, Entity par5Entity)
     {
-		
+		par5Entity.posX = Math.random()*1000;
+		par5Entity.posY = Math.random()*1000;
+		par5Entity.posZ = Math.random()*1000;
     }
 	
 	

@@ -74,6 +74,7 @@ public class MotionModifiers {
             GameRegistry.registerBlock(inlineLauncher);
             GameRegistry.registerBlock(localizedDeflector);
             GameRegistry.registerBlock(speedBlock);
+            GameRegistry.registerBlock(unstableField);
             MinecraftForge.setBlockHarvestLevel(deflectorBlock, "Pickaxe", 2);
             MinecraftForge.setBlockHarvestLevel(absorberBlock, "Pickaxe", 2);
             MinecraftForge.setBlockHarvestLevel(launcherBlock, "Pickaxe", 2);

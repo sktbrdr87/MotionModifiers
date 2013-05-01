@@ -18,25 +18,28 @@ public class LocalizedDeflector extends Block {
     /**
      * Triggered whenever an entity collides with this block (enters into the block). Args: world, x, y, z, entity
      */
-    public void onEntityCollidedWithBlock(World par1World, int par2, int par3, int par4, Entity par5Entity)
+    public void onEntityCollidedWithBlock(World par1World, int par2x, int par3y, int par4z, Entity par5Entity)
     {
-    	par5Entity.motionX = 0-par5Entity.motionX*2;
-    	if (par5Entity.motionX>0){
-    		par5Entity.motionX =+ 1;
-    	} else {
-    		par5Entity.motionX =- 1;
+    	if(Math.floor(par5Entity.motionX)!=0) {
+    		if (par5Entity.posX<par2x){
+    			par5Entity.motionX =+ 2;
+    		} else if (par5Entity.posX>par2x){
+    			par5Entity.motionX =- 2;
+    		}
     	}
-    	//par5Entity.motionY = 0-par5Entity.motionY*2;
-    	if (par5Entity.motionY>0){
-    		par5Entity.motionY =+ 1;
-    	} else {
-    		par5Entity.motionY =- 1;
+    	if(Math.floor(par5Entity.motionY)!=0) {
+    		if (par5Entity.posY<par3y){
+    			par5Entity.motionY =+ 2;
+    		} else if (par5Entity.posY>par3y){
+    			par5Entity.motionY =- 2;
+    		}
     	}
-    	//par5Entity.motionZ = 0-par5Entity.motionZ*2;
-    	if (par5Entity.motionZ>0){
-    		par5Entity.motionZ =+ 1;
-    	} else {
-    		par5Entity.motionZ =- 1;
+    	if(Math.floor(par5Entity.motionZ)!=0) {
+    		if (par5Entity.posZ<par4z){
+    			par5Entity.motionZ =+ 2;
+    		} else if (par5Entity.posZ>par4z){
+    			par5Entity.motionZ =- 2;
+    		}
     	}
     	par5Entity.setPosition(par5Entity.lastTickPosX, par5Entity.lastTickPosY, par5Entity.lastTickPosZ);
     }
